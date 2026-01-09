@@ -101,7 +101,7 @@
     }
 
      else if(length >18){
-      return ' Password too long! limit is only 18!';
+      return ' Length is too long! limit is only 18!';
     
     }
 
@@ -131,7 +131,7 @@
 
     const result = generatePassword(length, includeLowerCase, includeUpperCase, includeNumbers, includeSymbols);
 
-    if(result.includes('Password') || result.includes('Select')){
+    if(result.includes('Length') || result.includes('Select')){
       errorMessage.textContent = result;
       errorMessage.style.color = "red";
       passResult.textContent = "";
@@ -148,3 +148,4 @@
 
 
 </script>
+
